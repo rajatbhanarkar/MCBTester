@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/_20sdp"
+    android:background="@color/white"
+    tools:context=".TestConfigActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:fontFamily="@font/dmsans"
+            android:textStyle="bold"
+            android:textSize="@dimen/_18sdp"
+            android:text="Configure Test"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:fontFamily="@font/dmsans"
+            android:textSize="@dimen/_14sdp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:text="Choose MCB Type"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:weightSum="3">
+
+            <TextView
+                android:id="@+id/btntypeany"
+                android:textAlignment="center"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:padding="@dimen/_13sdp"
+                android:textSize="@dimen/_12sdp"
+                android:fontFamily="@font/dmsans"
+                android:background="@drawable/less_rounded_corners"
+                android:backgroundTint="@color/lightSkin"
+                android:textColor="@color/black"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:text="ANY"/>
+
+            <TextView
+                android:id="@+id/btntypeb"
+                android:textAlignment="center"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:padding="@dimen/_13sdp"
+                android:textSize="@dimen/_12sdp"
+                android:fontFamily="@font/dmsans"
+                android:background="@drawable/less_rounded_corners"
+                android:backgroundTint="@color/lightSkin"
+                android:textColor="@color/black"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:text="B"/>
+
+            <TextView
+                android:id="@+id/btntypec"
+                android:textAlignment="center"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:padding="@dimen/_13sdp"
+                android:textSize="@dimen/_12sdp"
+                android:fontFamily="@font/dmsans"
+                android:background="@drawable/less_rounded_corners"
+                android:backgroundTint="@color/lightSkin"
+                android:textColor="@color/black"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:text="C"/>
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/dmsans"
+            android:textSize="@dimen/_14sdp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:text="Choose Test Type"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:weightSum="3">
+
+            <TextView
+                android:id="@+id/btnttol"
+                android:textAlignment="center"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:padding="@dimen/_13sdp"
+                android:textSize="@dimen/_12sdp"
+                android:fontFamily="@font/dmsans"
+                android:background="@drawable/less_rounded_corners"
+                android:backgroundTint="@color/periwinkle"
+                android:textColor="@color/black"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:text="OL"/>
+
+            <TextView
+                android:id="@+id/btnttsc1"
+                android:textAlignment="center"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:padding="@dimen/_13sdp"
+                android:textSize="@dimen/_12sdp"
+                android:fontFamily="@font/dmsans"
+                android:background="@drawable/less_rounded_corners"
+                android:backgroundTint="@color/periwinkle"
+                android:textColor="@color/black"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:text="SC1"/>
+
+            <TextView
+                android:id="@+id/btnttsc2"
+                android:textAlignment="center"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:padding="@dimen/_13sdp"
+                android:textSize="@dimen/_12sdp"
+                android:fontFamily="@font/dmsans"
+                android:background="@drawable/less_rounded_corners"
+                android:backgroundTint="@color/periwinkle"
+                android:textColor="@color/black"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:text="SC2"/>
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/dmsans"
+            android:textSize="@dimen/_14sdp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:text="Choose MCB Current Rating"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:weightSum="4">
+
+            <TextView
+                android:id="@+id/btncurr1"
+                android:textAlignment="center"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:padding="@dimen/_13sdp"
+                android:textSize="@dimen/_12sdp"
+                android:fontFamily="@font/dmsans"
+                android:background="@drawable/less_rounded_corners"
+                android:backgroundTint="@color/palePink"
+                android:textColor="@color/black"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:text="1"/>
+
+            <TextView
+                android:id="@+id/btncurr2"
+                android:textAlignment="center"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:padding="@dimen/_13sdp"
+                android:textSize="@dimen/_12sdp"
+                android:fontFamily="@font/dmsans"
+                android:background="@drawable/less_rounded_corners"
+                android:backgroundTint="@color/palePink"
+                android:textColor="@color/black"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:text="2"/>
+
+            <TextView
+                android:id="@+id/btncurr4"
+                android:textAlignment="center"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:padding="@dimen/_13sdp"
+                android:textSize="@dimen/_12sdp"
+                android:fontFamily="@font/dmsans"
+                android:background="@drawable/less_rounded_corners"
+                android:backgroundTint="@color/palePink"
+                android:textColor="@color/black"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:text="4"/>
+
+            <TextView
+                android:id="@+id/btncurr6"
+                android:textAlignment="center"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:padding="@dimen/_13sdp"
+                android:textSize="@dimen/_12sdp"
+                android:fontFamily="@font/dmsans"
+                android:background="@drawable/less_rounded_corners"
+                android:backgroundTint="@color/palePink"
+                android:textColor="@color/black"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:text="6"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            android:weightSum="4">
+
+            <TextView
+                android:id="@+id/btncurr10"
+                android:textAlignment="center"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:padding="@dimen/_13sdp"
+                android:textSize="@dimen/_12sdp"
+                android:fontFamily="@font/dmsans"
+                android:background="@drawable/less_rounded_corners"
+                android:backgroundTint="@color/palePink"
+                android:textColor="@color/black"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:text="10"/>
+
+            <TextView
+                android:id="@+id/btncurr16"
+                android:textAlignment="center"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:padding="@dimen/_13sdp"
+                android:textSize="@dimen/_12sdp"
+                android:fontFamily="@font/dmsans"
+                android:background="@drawable/less_rounded_corners"
+                android:backgroundTint="@color/palePink"
+                android:textColor="@color/black"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:text="16"/>
+
+            <TextView
+                android:id="@+id/btncurr25"
+                android:textAlignment="center"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:padding="@dimen/_13sdp"
+                android:textSize="@dimen/_12sdp"
+                android:fontFamily="@font/dmsans"
+                android:background="@drawable/less_rounded_corners"
+                android:backgroundTint="@color/palePink"
+                android:textColor="@color/black"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:text="25"/>
+
+            <TextView
+                android:id="@+id/btncurr32"
+                android:textAlignment="center"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:padding="@dimen/_13sdp"
+                android:textSize="@dimen/_12sdp"
+                android:fontFamily="@font/dmsans"
+                android:background="@drawable/less_rounded_corners"
+                android:backgroundTint="@color/palePink"
+                android:textColor="@color/black"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:text="32"/>
+
+        </LinearLayout>
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/less_rounded_corners"
+            android:backgroundTint="@color/colorPrimary"
+            android:fontFamily="@font/dmsans"
+            android:textAllCaps="false"
+            android:padding="@dimen/_14sdp"
+            android:textSize="@dimen/_13sdp"
+            android:textStyle="bold"
+            android:layout_marginTop="40dp"
+            android:textColor="@color/white"
+            android:text="Start Test"/>
+    </LinearLayout>
+
+</ScrollView>

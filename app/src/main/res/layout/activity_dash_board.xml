@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/_20sdp"
+    android:background="@color/white"
+    android:clipToPadding="false"
+    tools:context=".DashBoardActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+
+        <ImageView
+            android:layout_width="@dimen/_35sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:src="@drawable/profpiclogo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_centerVertical="true"
+            android:fontFamily="@font/dmsans"
+            android:textStyle="bold"
+            android:textSize="@dimen/_14sdp"
+            android:layout_marginLeft="@dimen/_45sdp"
+            android:text="Hi, Rajat!"/>
+
+        <ImageView
+            android:id="@+id/ivdbaadd"
+            android:layout_width="@dimen/_35sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:background="@drawable/circle"
+            android:src="@drawable/ic_add"
+            android:padding="10dp"
+            android:layout_alignParentRight="true" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:fontFamily="@font/dmsans"
+        android:textStyle="bold"
+        android:layout_marginTop="70dp"
+        android:textSize="@dimen/_14sdp"
+        android:text="Previous Tests"/>
+
+    <ListView
+        android:id="@+id/lvdbalist"
+        android:layout_marginTop="110dp"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="20dp"
+        android:scrollbars="none"
+        android:dividerHeight="11dp"
+        android:divider="@null" />
+
+</RelativeLayout>

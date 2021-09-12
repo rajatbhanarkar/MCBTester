@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/_20sdp"
+    android:background="@color/white">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:fontFamily="@font/dmsans"
+        android:textStyle="bold"
+        android:textSize="@dimen/_18sdp"
+        android:text="Connect to Bluetooth"/>
+
+
+    <com.theophrast.ui.widget.SquareImageView
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:src="@drawable/ic_bluetooth"/>
+
+    <Button
+        android:id="@+id/btnconnect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/less_rounded_corners"
+        android:backgroundTint="@color/lightSkin"
+        android:fontFamily="@font/dmsans"
+        android:textAllCaps="false"
+        android:padding="@dimen/_14sdp"
+        android:textSize="@dimen/_13sdp"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:textColor="@color/black"
+        android:text="Connect"/>
+
+</LinearLayout>
